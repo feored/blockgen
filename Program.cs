@@ -18,7 +18,7 @@ public class MapTool
         // }
         var scale = 4;
         var max_y = 32 * 32;
-        List<Pixel> pixels = ImageHelper.GetPixels("res/hmm.jpg");
+        List<Pixel> pixels = ImageHelper.GetPixels("YOUR_FILE_HERE.jpg");
         Console.WriteLine("Drawable pixels: " + pixels.Count);
         foreach (Pixel pixel in pixels)
         {
@@ -29,6 +29,6 @@ public class MapTool
             var block = ImageHelper.getClosestIdent(pixel.color);
             blockBuilder.addAnchordObject(block, pos);
         }
-        blockBuilder.save_map("Testo");
+        blockBuilder.save_map("Test");
     }
 }
